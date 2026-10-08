@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CineNoval | Movies</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="navigation">
+      <nav class="navigation-container">
+        <a class="website-name" href="index.html"> Cine Noval </a>
+
+        <div class="navigation-links">
+          <a href="index.html">Home</a>
+
+          <a href="books.html"> Books </a>
+
+          <a class="current-page" href="movies.html">Movies</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="book-category-navigation">
+      <div class="book-category-container">
+        <span class="book-category-title"> Featured Movies </span>
+
+        <div class="book-category-links">
+          <a class="book-category-active" href="movies.html"> Featured Movies </a>
+          <a href="books to screen.html">
+            Books To Screen
+          </a>
+          <a href="Gallery.html"> Gallery </a>
+          
+          <button onclick="suggestMovie()">🎬 Suggest a Movie</button>
+
+        </div>
+      </div>
+    </nav>
+
+    <main class="bookshelf-area">
+      <div id="moviePopup" class="movie-popup">
+    <div class="popup-box">
+
+        <button class="close-button" onclick="closePopup()">×</button>
+
+        <img id="movieImage" src="" alt="Movie Poster">
+
+        <h2 id="movieName"></h2>
+
+        <button onclick="suggestMovie()">Suggest Another</button>
+
+    </div>
+</div>
+    
+      <img
+        class="bookshelf-image"
+        src="https://uploads.onecompiler.io/43hz6ae4q/44xxdpua8/ChatGPT%20Image%20Aug%2022,%202026,%2004_01_05%20PM.png"
+        alt="Wooden bookshelf with multiple shelves"
+      />
+
+      <div class="books-row books-row-1">
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Harry+Potter+and+the+Philosopher%27s+Stone"
+        >
+          <img
+            src="https://image.tmdb.org/t/p/w342/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+            alt="Harry Potter and the Philosopher's Stone"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=The+Hunger+Games"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg"
+            alt="The Hunger Games"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=The+Lord+of+the+Rings%3A+The+Fellowship+of+the+Ring"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg"
+            alt="The Lord of the Rings: The Fellowship of the Ring"
+          />
+        </a>
+
+        <a class="book-item" href="https://www.justwatch.com/in/search?q=Dune">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg"
+            alt="Dune"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=The+Martian"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg"
+            alt="The Martian"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Inception"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg"
+            alt="Inception"
+          />
+        </a>
+      </div>
+
+      <div class="books-row books-row-2">
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Interstellar"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
+            alt="Interstellar"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=The+Dark+Knight"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
+            alt="The Dark Knight"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Titanic"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png"
+            alt="Titanic"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Avatar"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg"
+            alt="Avatar"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Jurassic+Park"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg"
+            alt="Jurassic Park"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=3+Idiots"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg"
+            alt="3 Idiots"
+          />
+        </a>
+      </div>
+
+      <div class="books-row books-row-3">
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Dangal"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg"
+            alt="Dangal"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Baahubali%3A+The+Beginning"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/5/5f/Baahubali_The_Beginning_poster.jpg"
+            alt="Baahubali: The Beginning"
+          />
+        </a>
+
+        <a class="book-item" href="https://www.justwatch.com/in/search?q=RRR">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg"
+            alt="RRR"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Zindagi+Na+Milegi+Dobara"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/1/17/Zindagi_Na_Milegi_Dobara.jpg"
+            alt="Zindagi Na Milegi Dobara"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Taare+Zameen+Par"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/b/b4/Taare_Zameen_Par_Like_Stars_on_Earth_poster.png"
+            alt="Taare Zameen Par"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=The+Shawshank+Redemption"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
+            alt="The Shawshank Redemption"
+          />
+        </a>
+      </div>
+
+      <div class="books-row books-row-4">
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Forrest+Gump"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg"
+            alt="Forrest Gump"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Spirited+Away"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_Japanese_poster.png"
+            alt="Spirited Away"
+          />
+        </a>
+
+        <a class="book-item" href="https://www.justwatch.com/in/search?q=Coco">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg"
+            alt="Coco"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Spider-Man%3A+No+Way+Home"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg"
+            alt="Spider-Man: No Way Home"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=Black+Panther"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/d/d6/Black_Panther_%28film%29_poster.jpg"
+            alt="Black Panther"
+          />
+        </a>
+
+        <a
+          class="book-item"
+          href="https://www.justwatch.com/in/search?q=The+Godfather"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
+            alt="The Godfather"
+          />
+        </a>
+      </div>
+    </main>
+    <script>
+
+let movies = [
+    "Harry Potter and the Philosopher's Stone",
+    "The Hunger Games",
+    "The Lord of the Rings",
+    "Dune",
+    "The Martian",
+    "Inception",
+    "Interstellar",
+    "The Dark Knight"
+];
+
+let movieImages = [
+    "https://image.tmdb.org/t/p/w342/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/f/fb/Lord_Rings_Fellowship_Ring.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg"
+];
+
+
+function suggestMovie() {
+
+    let randomNumber =
+        Math.floor(Math.random() * movies.length);
+
+    document.getElementById("movieName").innerText =
+        movies[randomNumber];
+
+    document.getElementById("movieImage").src =
+        movieImages[randomNumber];
+
+    document.getElementById("moviePopup").style.display =
+        "flex";
+}
+
+
+function closePopup() {
+
+    document.getElementById("moviePopup").style.display =
+        "none";
+}
+
+    </script>
+  </body>
+</html>

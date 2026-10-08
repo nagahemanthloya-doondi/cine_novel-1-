@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineNoval - Contact Us</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <nav class="navigation">
+
+        <div class="navigation-container">
+
+            <div class="website-name">
+                CineNoval
+            </div>
+
+            <div class="navigation-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="books.html">
+                    Books
+                </a>
+
+                <a href="movies.html">
+                    Movies
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html" class="current-page">
+                    Contact
+
+                </a>
+
+    </nav>
+
+    <main class="contact-page">
+
+        <section class="contact-introduction">
+
+            <p class="small-heading">
+                Get In Touch
+            </p>
+
+            <h1>
+                Let's Start a
+                <em>Conversation.</em>
+            </h1>
+
+            <p class="contact-description">
+
+                Have a question about books, movies or
+                collections? We would love to hear from you.
+
+            </p>
+
+        </section>
+
+        <section class="contact-content">
+
+            <div class="contact-information">
+
+                <h2>
+                    Contact Information
+                </h2>
+
+                <p class="contact-information-description">
+
+                    Reach out to us using any of the contact
+                    details below.
+
+                </p>
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        @
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <a href="mailto:naghemanthloya@gmail.com">
+                            naghemanthloya@gmail.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Social Handles
+                        </h3>
+
+                        
+                      <a href="https://x.com/Doondi619895"><h3 style="display: inline-block; margin-right: 10pt;">𝕏</h3></a>
+                      <a href="https://in.linkedin.com/in/nagahemanth-loya-86904838a"><img src="LinkedIn.jpeg" height=20pt width=20pt></a>
+
+                    </div>
+
+                </div>
+
+                
+
+                
+
+            </div>
+
+            <div class="contact-form-container">
+
+                <h2>
+                    Send Us a Message
+                </h2>
+
+                
+                <form action="#" method="post" id="contactForm">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is your message about?"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="contact-submit-button"
+                    >
+
+                        Send Message
+
+                        <span>→</span>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="website-footer">
+
+        <span>
+            © 2026 CineNoval
+        </span>
+
+        <span>
+            Where Stories Meet the Screen
+        </span>
+
+    </footer>
+
+<script>
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+        let name = document.getElementById("name").value;
+
+        if (name === "") {
+            alert("Please enter your name.");
+            event.preventDefault();
+        }
+
+    });
+
+</script>
+</body>
+              
+
+</html>
